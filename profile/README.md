@@ -64,6 +64,6 @@ Tem uma ideia ou precisa de um orçamento? Estamos à disposição.
 
 **🔐 Secret Store** — *Sua comunidade, automatizada com inteligência.*
 
-© 2025 Secret Store · Todos os direitos reservados
+© 2026 Secret Store · Todos os direitos reservados
 
 </div>
