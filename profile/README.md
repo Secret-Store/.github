@@ -1,10 +1,8 @@
 <div align="center">
 
-<img src="assets/banner.png" alt="Secret Store — Banner" width="100%" />
-
-<br/>
-
 # 🔐 Secret Store
+
+<img src="assets/banner.png" alt="Secret Store — Banner" width="100%" />
 
 ### Bots Discord sob medida para a sua comunidade
 
@@ -14,7 +12,7 @@
 
 <a href="https://discord.com"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 <img src="https://img.shields.io/badge/Plataforma-SaaS-7C3AED?style=for-the-badge" alt="SaaS" />
-<img src="https://img.shields.io/badge/Desde-2025-22D3EE?style=for-the-badge" alt="Desde 2025" />
+<img src="https://img.shields.io/badge/Desde-2026-22D3EE?style=for-the-badge" alt="Desde 2026" />
 
 </div>
 
