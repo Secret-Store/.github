@@ -1,59 +1,86 @@
 <div align="center">
 
-# 🤖 Secret Store
+# 🔐 Secret Store
 
-### Plataforma SaaS de Venda e Aluguel de Bots para Discord
+### Plataforma modular para venda e aluguel de bots Discord
 
-**Backend Modular · Multi-Tenant · Orientado a Eventos**
+**Bots configuráveis · Multi-tenant · Marketplace de módulos · Runtime distribuído · Segurança crítica de tokens**
 
-[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue?style=for-the-badge)]()
-[![Versão](https://img.shields.io/badge/versão-2.0.0-5865F2?style=for-the-badge)]()
-[![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white)]()
-[![License](https://img.shields.io/badge/license-Proprietário-red?style=for-the-badge)]()
+[![Backend](https://img.shields.io/badge/API%20Backend-Private-7C3AED?style=for-the-badge)](https://github.com/Secret-Store/backend)
+[![Go](https://img.shields.io/badge/Go-1.22+-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev/)
+[![Discord](https://img.shields.io/badge/Discord-Bots-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/developers/docs/intro)
 
 </div>
 
 ---
 
-## 🎯 O que é a Secret Store?
+## ✨ Sobre
 
-A **Secret Store** é uma plataforma especializada na **venda e aluguel de bots para Discord**, oferecendo soluções **modulares, configuráveis e multi-tenant** para servidores e organizações de todos os portes.
+A **Secret Store** é uma plataforma SaaS para comercialização de bots Discord em dois modelos:
 
-Da solicitação do cliente ao billing recorrente, passando por orçamentos técnicos, licenciamento, provisionamento de instâncias e execução distribuída de bots em tempo real — fazemos o ciclo de vida completo do produto.
+- 🛒 **Venda sob demanda** — orçamento técnico, entrega, licenciamento e suporte.
+- 🔁 **Aluguel por assinatura** — planos, módulos, entitlements, tokens e instâncias em runtime distribuído.
+
+A arquitetura foi desenhada para ser **modular**, **multi-tenant**, **segura** e **orientada a eventos**, permitindo escalar bots, clientes, planos e marketplace sem acoplamento desnecessário.
 
 ---
 
-## 💎 Diferenciais
+## 🧠 Conceito principal
 
-| | |
+> **Bot lógico não é instância de execução, e token não é configuração.**
+
+| Conceito | Significado |
 |---|---|
-| 🛒 **Venda de Bots** | Orçamentos técnicos + licenciamento (trial / subscription / lifetime / enterprise) |
-| 🔁 **Aluguel de Bots** | Planos recorrentes com entitlements, tokens e módulos |
-| 🧩 **Sistema Modular** | Módulos plugáveis, versionados e configuráveis — sem deploy de código novo |
-| 🏢 **Multi-Tenancy** | Isolamento total por organização |
-| ⚡ **Runtime Distribuído** | Manager + Workers + sharding de instâncias |
-| 🔐 **Segurança Crítica** | Tokens em Vault/KMS, AES-256-GCM, RBAC granular |
+| 🤖 **Bot** | Produto lógico com módulos, templates e configuração-base. |
+| ⚙️ **Instância** | Execução física conectada ao Discord por um worker. |
+| 🔑 **Token** | Credencial sensível armazenada em Vault/KMS e nunca logada. |
+| 🧩 **Módulo** | Pacote plugável de comandos/eventos descrito por manifesto. |
+| 🎟️ **Entitlement** | Direito concreto concedido por plano, licença ou add-on. |
 
 ---
 
-## 🧱 Conceito Central
+## 🏗️ Plataforma
 
-> O cliente configura o **Bot** (produto lógico) uma vez; cada **Instância** (execução física) herda essa configuração e só a sobrescreve quando necessário.
-
-```
-Bot (lógico)  ≠  Instância (execução)  ≠  Token (credencial)
+```text
+Secret Store
+├── API Backend
+│   ├── Multi-Tenancy + RBAC
+│   ├── Bot / Instance / Module Services
+│   ├── Plan / Entitlement / Billing
+│   ├── Quote / License
+│   └── Audit / Analytics / Config
+│
+└── Runtime
+    ├── Runtime Manager
+    ├── Runtime Workers
+    └── Plugin Engine
 ```
 
 ---
 
-## 🛠️ Stack Principal
+## 🚀 Status
 
-`Go 1.22+` · `PostgreSQL 16` · `Redis 7` · `TimescaleDB` · `gRPC` · `RabbitMQ / Kafka` · `Docker` · `Kubernetes` · `discordgo`
+| Área | Status |
+|---|---|
+| Documentação técnica v2.0.0 | ✅ Aprovada |
+| Repositório backend | ✅ Criado |
+| Fundação multi-tenant | 🧱 Planejado |
+| Plugin Engine | 🧩 Planejado |
+| Billing/Entitlements | 💳 Planejado |
+| Marketplace | 🛒 Planejado |
+
+---
+
+## 📚 Repositórios
+
+| Repositório | Descrição | Visibilidade |
+|---|---|---|
+| [`backend`](https://github.com/Secret-Store/backend) | API Backend da plataforma Secret Store. | Privado |
 
 ---
 
 <div align="center">
 
-**Feito com 💜 pela equipe Secret Store**
+**Secret Store** — Bots Discord modulares, seguros e escaláveis.
 
 </div>
