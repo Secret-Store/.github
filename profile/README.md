@@ -58,14 +58,6 @@ Tem uma ideia ou precisa de um orçamento? Estamos à disposição.
 
 <br/>
 
-## 📦 Nossos repositórios
-
-| Repositório | Sobre |
-|---|---|
-| [`backend`](https://github.com/Secret-Store/backend) | Núcleo da plataforma Secret Store. |
-
-<br/>
-
 ---
 
 <div align="center">
